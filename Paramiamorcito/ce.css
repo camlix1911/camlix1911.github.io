@@ -1,0 +1,86 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3efff; 
+        }
+
+    
+        .header {
+            background-color: #c3afff;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: serif;
+            font-size: 25px;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+        }
+
+        .header img {
+            width: 80px;
+        }
+
+       
+        .menu {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .menu button {
+            background-color: white;
+            color: #875dff;
+            border: 2px solid white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .menu button:hover {
+            background-color: #9c33ff;
+            color: white;
+        }
+
+        /* ANIMACIÓN DE CORAZONES */
+        .heart {
+            position: absolute;
+            top: -1px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+        .poema{
+            margin: 100px;
+            text-align: center;
+            text-align: justify;
+            font-family: serif;
+            font-size: 20px;
+
+        }
+.poema{
+    margin: 80px;
+   text-align: justify;
+}

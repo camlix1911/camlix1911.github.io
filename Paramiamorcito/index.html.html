@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="love.css">
+    <title>Para mi Rodriguito ❤️</title>
+    
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="pngwing.com.png" alt="Corazón">
+        <h1>Para el amor de mi vida</h1>
+        <img src="pngwing.com.png" alt="Corazón">
+    </div>
+
+    <nav class="menu">
+        <a href="razones.html"><button>Razones</button></a>
+        <a href="cosas.html"><button>Cosas</button></a>
+        <a href="ce.html"><button>¿Cómo me enamoraste?</button></a>
+    </nav>
+</header>
+
+<hr>
+<center>
+<br>
+<div class="poema">
+    <p> Me gusta ser tuya, y no de manera posesiva, sino en el sentido romantico. Me gusta porque, aun habiendo muchas personas, teniendo libertad de elegir y pudiendo hacer o estar con quien quiera, ultimamente solo pienso en ti, en amarte y las ganas que tengo de estar contigo. Mi cuerpo te ha elegido como su razon de deseo y lujuria, mi mente como su pensamiento habitual y mis ojos como su vista preferida.</p>
+<div class="texto">
+<p> "Desde el primer día en que te conocí, supe que eras alguien especial. Cada momento contigo es un regalo, y esta página es solo una pequeña forma de recordarte cuánto te amo. 💖"</p></center>
+</div>
+
+
+<script>
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️";
+        document.body.appendChild(heart);
+
+        // Posición aleatoria en el ancho de la pantalla
+        heart.style.left = Math.random() * 100 + "vw";
+
+        // Tamaño aleatorio
+        heart.style.fontSize = Math.random() * 2 + 1 + "rem";
+
+        // Duración de la animación aleatoria
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+        // Eliminar el corazón después de la animación
+        setTimeout(() => {
+            heart.remove();
+        }, 4000);
+    }
+
+    // Crear corazones cada 500ms
+    setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
